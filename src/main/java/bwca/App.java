@@ -2,15 +2,14 @@ package bwca;
 
 import api.ApiService;
 import input.Input;
-import input.InputService;
+import input.InputServiceFactory;
 import parser.ParserService;
-import storage.FileService;
 import storage.StorageService;
+import storage.StorageServiceFactory;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.*;
-import java.util.regex.Matcher;
 
 public class App 
 {
@@ -19,10 +18,10 @@ public class App
     private Input input;
     private ParserService parserService;
 
-    public App(){
+    public App() {
         this.apiservice = new ApiService();
-        this.storageService = new FileService();
-        this.input = new InputService();
+        this.storageService = StorageServiceFactory.getStorageService();
+        this.input = InputServiceFactory.getInputService();
         this.parserService = new ParserService();
     }
 

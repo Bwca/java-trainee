@@ -1,13 +1,15 @@
 package storage;
 
+import javax.inject.Named;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.UUID;
 
+@Named("FileService")
 public class FileService implements StorageService {
 
-    private final String storageFolder = "src/main/resources/";
+    private final String storageFolder = "src/main/storage/";
 
     @Override
     public InputStream readPage(UUID id) throws FileNotFoundException {
