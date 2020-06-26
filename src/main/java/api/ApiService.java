@@ -13,6 +13,9 @@ public class ApiService {
         URL url = new URL(urlString);
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
         con.setRequestMethod("GET");
+        if(con.getResponseCode() != 200){
+            throw new IOException("Ошибка при запросе веб-страницы!");
+        }
         return con.getInputStream();
     }
 }

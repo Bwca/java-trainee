@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/simbirsoft-backend-trainee-app.iml" filepath="$PROJECT_DIR$/simbirsoft-backend-trainee-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-trainee-app.iml" filepath="$PROJECT_DIR$/java-trainee-app.iml" />
     </modules>
   </component>
 </project>

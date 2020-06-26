@@ -9,7 +9,7 @@ public class InputService implements Input {
         Scanner scanner = new Scanner(System.in);
         String url;
 
-        final String urlRegex = "https?://([\\w\\d]+)((\\.[\\w\\d]+)+)?/?";
+        final String urlRegex = "https?://.+";
 
         while(true) {
             System.out.println("Введите адрес страницы");

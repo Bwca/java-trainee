@@ -26,7 +26,7 @@ public class FileService implements StorageService {
         }
 
         UUID id = UUID.randomUUID();
-        String filePath = storageDir + id.toString();
+        String filePath = this.storageFolder + id.toString();
         File targetFile = new File(filePath);
         if(!targetFile.createNewFile()){
             throw new IOException("Неудалось сохранить файл!");
