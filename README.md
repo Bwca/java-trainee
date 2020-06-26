@@ -19,3 +19,6 @@ https://yandex.ru
 https://news.ru
 https://habr.ru
 ```
+
+### Исходники на гитхабе
+https://github.com/Bwca/java-trainee
