@@ -2,10 +2,12 @@ package storage;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.UUID;
 
+/** Интерфейс службы для сохранения веб-страницы. */
 public interface StorageService {
-    public UUID storePage (InputStream stream) throws IOException;
-    public InputStream readPage (UUID id) throws IOException;
+    /** Сохранить страницу, вернуть ее UUID. */
+    UUID storePage(InputStream stream) throws IOException;
+    /** Прочитать страницу по ее UUID. */
+    InputStream readPage(UUID id) throws IOException;
 }

@@ -1,0 +1,12 @@
+/home/voka/Projects/simbirsoft-backend-trainee-app/src/main/java/db/DatabaseFactory.java
+/home/voka/Projects/simbirsoft-backend-trainee-app/src/main/java/api/ApiService.java
+/home/voka/Projects/simbirsoft-backend-trainee-app/src/main/java/db/Database.java
+/home/voka/Projects/simbirsoft-backend-trainee-app/src/main/java/storage/FileService.java
+/home/voka/Projects/simbirsoft-backend-trainee-app/src/main/java/parser/ParserService.java
+/home/voka/Projects/simbirsoft-backend-trainee-app/src/main/java/input/Input.java
+/home/voka/Projects/simbirsoft-backend-trainee-app/src/main/java/bwca/App.java
+/home/voka/Projects/simbirsoft-backend-trainee-app/src/main/java/input/InputServiceFactory.java
+/home/voka/Projects/simbirsoft-backend-trainee-app/src/main/java/storage/StorageService.java
+/home/voka/Projects/simbirsoft-backend-trainee-app/src/main/java/input/InputService.java
+/home/voka/Projects/simbirsoft-backend-trainee-app/src/main/java/db/InMemoryDbService.java
+/home/voka/Projects/simbirsoft-backend-trainee-app/src/main/java/storage/StorageServiceFactory.java

@@ -1,5 +1,6 @@
 package input;
 
+/** Интерфейс получения адреса для http-запроса */
 public interface Input {
-    public String getUrl();
+    String getUrl();
 }

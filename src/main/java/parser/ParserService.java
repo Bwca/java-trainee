@@ -1,12 +1,19 @@
 package parser;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.Arrays;
 
-public class ParserService { //ёа-я\\-
-    private final Pattern searchPattern = Pattern.compile("[a-z]+", Pattern.CASE_INSENSITIVE);
+/** Служба для парсинга HTML. */
+public class ParserService {
 
-    public Matcher matchAllWords(String line){
-        return this.searchPattern.matcher(line);
+    /** Регулярное выражение для проверки слов. */
+    private final String wordMatch = "(?!-)[ёЁа-яА-Я\\-]+";
+
+    /** Регулярное выражение для фрагментирования строки на потенциальные слова. */
+    private final String delimiters = "[\\s,.!?\";:\\[\\]()\r\t»«]";
+
+    /** Получить слова из фрагмента HTML. */
+    public String[] getWordsFromHtmlFragment(String html) {
+        String [] textChunks = html.replaceAll("<[^>]*>", "").split(this.delimiters);
+        return Arrays.stream(textChunks).filter(s -> s.matches(this.wordMatch)).toArray(String[]::new);
     }
 }
